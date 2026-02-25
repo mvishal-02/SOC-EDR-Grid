@@ -1,0 +1,5 @@
+Ubuntu SOC Server: 192.168.74.132
+Windows Endpoint: 192.168.74.1
+Kali Linux: 192.168.74.131
+
+Network Mode: NAT 

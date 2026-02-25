@@ -1,0 +1,36 @@
+vishal@soc-server:~$ sudo systemctl status wazuh-manager
+● wazuh-manager.service - Wazuh manager
+     Loaded: loaded (/usr/lib/systemd/system/wazuh-manager.service; enabled; preset: enabled)
+     Active: active (running) since Wed 2026-02-25 16:54:00 IST; 2min 9s ago
+    Process: 1390 ExecStart=/usr/bin/env /var/ossec/bin/wazuh-control start (code=exited, status=0/SUCCESS)
+      Tasks: 123 (limit: 4544)
+     Memory: 561.8M (peak: 569.0M swap: 36.7M swap peak: 39.0M)
+        CPU: 1min 22.236s
+     CGroup: /system.slice/wazuh-manager.service
+             ├─2462 /var/ossec/framework/python/bin/python3 /var/ossec/api/scripts/wazuh-apid.py
+             ├─2463 /var/ossec/framework/python/bin/python3 /var/ossec/api/scripts/wazuh-apid.py
+             ├─2465 /var/ossec/framework/python/bin/python3 /var/ossec/api/scripts/wazuh-apid.py
+             ├─2469 /var/ossec/framework/python/bin/python3 /var/ossec/api/scripts/wazuh-apid.py
+             ├─2514 /var/ossec/bin/wazuh-authd
+             ├─2536 /var/ossec/bin/wazuh-db
+             ├─2563 /var/ossec/bin/wazuh-execd
+             ├─2581 /var/ossec/bin/wazuh-analysisd
+             ├─2595 /var/ossec/bin/wazuh-syscheckd
+             ├─2622 /var/ossec/bin/wazuh-remoted
+             ├─2660 /var/ossec/bin/wazuh-logcollector
+             ├─2682 /var/ossec/bin/wazuh-monitord
+             ├─2722 /var/ossec/bin/wazuh-modulesd
+             ├─4585 sh -c -- "/bin/ps -p 308 > /dev/null 2>&1"
+             └─4586 /bin/ps -p 308
+
+Feb 25 16:53:48 soc-server env[1390]: wazuh-remoted: Process 2657 not used by Wazuh, removing...
+Feb 25 16:53:50 soc-server env[1390]: Started wazuh-remoted...
+Feb 25 16:53:50 soc-server env[1390]: wazuh-logcollector: Process 2729 not used by Wazuh, removing...
+Feb 25 16:53:52 soc-server env[1390]: Started wazuh-logcollector...
+Feb 25 16:53:52 soc-server env[1390]: wazuh-monitord: Process 2828 not used by Wazuh, removing...
+Feb 25 16:53:54 soc-server env[1390]: Started wazuh-monitord...
+Feb 25 16:53:54 soc-server env[1390]: wazuh-modulesd: Process 2908 not used by Wazuh, removing...
+Feb 25 16:53:57 soc-server env[1390]: Started wazuh-modulesd...
+Feb 25 16:53:59 soc-server env[1390]: Completed.
+Feb 25 16:54:00 soc-server systemd[1]: Started wazuh-manager.service - Wazuh manager.
+vishal@soc-server:~$ 
