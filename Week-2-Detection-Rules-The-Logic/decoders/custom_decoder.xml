@@ -1,0 +1,9 @@
+<decoder name="custom-ssh-login">
+  <program_name>sshd</program_name>
+</decoder>
+
+<decoder name="custom-ssh-user">
+  <parent>custom-ssh-login</parent>
+  <regex>Accepted password for (\w+) from ([0-9\.]+)</regex>
+  <order>user,srcip</order>
+</decoder>

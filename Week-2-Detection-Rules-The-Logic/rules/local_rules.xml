@@ -1,0 +1,15 @@
+<group name="local,syslog,ssh">
+
+  <rule id="100001" level="10">
+    <if_sid>5710</if_sid>
+    <description>Multiple SSH authentication failures</description>
+    <group>authentication_failed,security_event</group>
+  </rule>
+
+  <rule id="100002" level="12">
+    <if_sid>550</if_sid>
+    <description>File integrity changed in monitored directory</description>
+    <group>fim,security_event</group>
+  </rule>
+
+</group>
