@@ -251,6 +251,7 @@ Week-2-Detection-Rules-The-Logic
 
 ├── vulnerability-detector
 
+
 │
 └── README.md
 
@@ -303,5 +304,6 @@ Week 2 focused on strengthening the detection layer of the SOC monitoring infras
 By implementing File Integrity Monitoring, custom log decoders, and vulnerability detection, the system gained the ability to identify suspicious activity and potential threats in real time.
 
 These improvements provide the foundation for the automated response capabilities implemented in Week 3.
+
 
 
