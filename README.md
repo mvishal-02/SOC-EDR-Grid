@@ -6,6 +6,7 @@
 
 # Project Overview
 
+
 **Sentient Shield SOC-EDR Grid** is a Security Operations Center (SOC) lab designed to simulate enterprise-level security monitoring and threat detection.
 
 The project uses **Wazuh SIEM**, **Sysmon**, **Atomic Red Team**, and multiple endpoints to monitor system activity, detect attacks, and visualize security events using the **MITRE ATT&CK framework**.
